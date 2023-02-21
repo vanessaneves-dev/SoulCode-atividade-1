@@ -1,0 +1,201 @@
+body {
+  font-family: Phudu, sans-serif;
+  margin: 0px;
+  background: #f7f7f7;
+  display: grid;
+  justify-items: center;
+  position: relative;
+}
+p {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 h2 p footer section article {
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  font-size: 2rem;
+  position: relative;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.cabecalho-container {
+  background-color: #f7f7f7;
+  margin-bottom: 1rem;
+}
+.cabecalho {
+  display: block;
+  width: 400px;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  gap: 3.75rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.navegacao {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.navegacao a {
+  background: white;
+  padding: 1rem 2rem;
+  color: black;
+  border-radius: 4px;
+  border: 0.1rem solid transparent;
+}
+
+.navegacao a:hover {
+  border: 0.1rem solid #e21;
+  transition: 0.3s;
+}
+
+main article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 62.5rem;
+}
+
+.introducao::before {
+  content: "";
+  width: 3.75rem;
+  height: 0.25rem;
+  background-color: #e21;
+  position: absolute;
+  top: 2rem;
+  right: -1.75rem;
+}
+
+.introducao {
+  background-color: white;
+  padding: 2.5rem;
+  text-align: right;
+  position: relative;
+  display: grid;
+  align-content: center;
+  gap: 1.25rem;
+  justify-items: end;
+}
+
+.botao {
+  background: #e21;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background-color: #900;
+}
+
+.imgbike img {
+  object-fit: cover;
+  height: 100%;
+}
+
+#vantagens h2 {
+  background-image: url(./img/onda.svg);
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  padding: 2.5rem;
+  align-self: center;
+}
+
+.vantagens {
+  background: white;
+  padding-bottom: 2.5rem;
+  margin-bottom: 1rem;
+}
+li h3 {
+  color: #000;
+}
+.vantagens-itens {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 10px;
+  padding: 1.5rem;
+}
+
+.vantagens-itens li:hover {
+  border-left: 0.3rem solid red;
+  transition: 0.5s;
+}
+
+.vantagens-itens li:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.vantagens-itens p {
+  grid-column: 2;
+}
+
+.produtos {
+  font-size: 2rem;
+  position: relative;
+  color: #000;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 5fr 4fr;
+  gap: 40px;
+  margin-left: 300px;
+}
+
+footer h3 {
+  margin-left: 20px;
+  margin-bottom: 32px;
+  margin-right: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer a {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+ul {
+  margin-bottom: 32px;
+  list-style: none;
+}
+
+.footer li {
+  margin-bottom: 16px;
+}
+
+.footer-contato li:nth-child(even):after {
+  content: "";
+  max-width: 360px;
+  display: block;
+  height: 2px;
+  background: var(--cor-11);
+  margin-top: 16px;
+}
+
+.footer-copy {
+  grid-column: 1;
+  margin-top: 40px;
+}
+
